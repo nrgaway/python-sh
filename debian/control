@@ -1,0 +1,25 @@
+Source: sh
+Section: misc
+Priority: optional
+Maintainer: Jason Mehring <nrgaway@gmail.com>
+Uploaders: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 9.20120410~),
+	       python (>= 2.6) | python-all (>= 2.6) | python-dev (>= 2.6) | python-all-dev (>= 2.6),
+	       python-setuptools,
+	       python-debian,
+               dh-python,
+	       quilt
+Homepage: http://pypi.python.org/pypi/pbs
+Vcs-Browser: https://github.com/amoffat/sh
+Vcs-Git: https://github.com/amoffat/sh.git
+Standards-Version: 3.9.6
+
+Package: python-sh
+Architecture: all
+Depends: ${python:Depends},
+	 ${misc:Depends} 
+Description: Full-fledged Subprocess Replacement For Python
+ sh is a full-fledged subprocess replacement for Python 2.6 - 3.4
+ that allows you to call any program as if it were a function:
+ .
+ sh is not a collection of system commands implemented in Python.
